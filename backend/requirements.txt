@@ -1,0 +1,39 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.9.2
+pydantic-settings==2.6.1
+sqlalchemy==2.0.36
+aiohttp==3.11.8
+httpx==0.28.0
+python-dotenv==1.0.1
+python-multipart==0.0.17
+aiosqlite==0.20.0
+greenlet==3.1.1
+
+# Cryptography & Security
+cryptography==43.0.3
+bcrypt==4.2.1
+
+# File parsing
+PyPDF2==3.0.1
+python-docx==1.1.2
+openpyxl==3.1.5
+chardet==5.2.0
+
+# Optional: Redis (install if ENABLE_REDIS=true)
+# redis==5.2.0
+# aioredis==2.0.1
+
+# Optional: Presidio (install if ENABLE_PRESIDIO=true)
+# presidio-analyzer==2.2.355
+# presidio-anonymizer==2.2.355
+# spacy==3.8.2
+
+# Optional: OCR (install if ENABLE_OCR=true)
+# Pillow==11.0.0
+# pytesseract==0.3.13
+
+# Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0
+httpx==0.28.0

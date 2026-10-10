@@ -1,0 +1,62 @@
+@import "tailwindcss";@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 19% 27%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217 19% 27%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 224 71.4% 4.1%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-slate-800;
+  }
+  body {
+    @apply bg-slate-950 text-slate-50;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(20, 30, 80, 0.15), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(20, 80, 60, 0.15), transparent 25%);
+    background-attachment: fixed;
+  }
+}
+
+.glass-panel {
+  @apply bg-slate-900/50 backdrop-blur-md border border-slate-800/60 shadow-xl shadow-black/40 rounded-xl;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.glow-text-danger {
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.glow-text-success {
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
